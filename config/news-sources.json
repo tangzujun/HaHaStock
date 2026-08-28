@@ -1,0 +1,15 @@
+{
+  "说明": "资讯源动态配置：sources 数组中增删源即可。type 决定抓取引擎（em-flash=东财7x24快讯 / wscn=华尔街见闻快讯 / em-search=东财资讯检索）；enabled=false 的源不加载不显示。新增同类源只需提供对应 type 与参数（url 可选，缺省用内置地址）。",
+  "sources": [
+    { "id": "em", "name": "东方财富", "type": "em-flash", "enabled": true },
+    { "id": "wscn", "name": "华尔街见闻", "type": "wscn", "enabled": true },
+    { "id": "emsearch", "name": "东财资讯", "type": "em-search", "enabled": true },
+    { "id": "cls", "name": "财联社（需Tushare token）", "type": "tushare", "enabled": false },
+    { "id": "jinshi", "name": "金十数据（需Tushare token）", "type": "tushare", "enabled": false },
+    { "id": "sina", "name": "新浪财经（需Tushare token）", "type": "tushare", "enabled": false },
+    { "id": "xq", "name": "雪球（需Tushare token）", "type": "tushare", "enabled": false },
+    { "id": "yicai", "name": "第一财经（需Tushare token）", "type": "tushare", "enabled": false },
+    { "id": "jqka", "name": "同花顺（需Tushare token）", "type": "tushare", "enabled": false },
+    { "id": "jinrongjie", "name": "金融界（需Tushare token）", "type": "tushare", "enabled": false }
+  ]
+}

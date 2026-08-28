@@ -1,0 +1,7 @@
+{
+  "说明": "选股条件插件配置：在 extra 数组中追加条件对象即可，无需修改代码。cat 取值 basic/quote/capital/board/tech；范围条件需提供 field（东财 clist 字段，可用 f2现价 f3涨跌幅 f5成交量 f6成交额 f7振幅 f8换手率 f9PE f10量比 f20总市值 f23PB f62主力净流入）、unit（显示单位）、scale（换算倍率，如市值 1e-8）；技术条件需给出 techEval（复用内置评估器 id：macd_gold/macd_dead/kdj_low/kdj_high/ma_bull/ma_bear/breakout60/drop20/mom20）。",
+  "extra": [
+    { "cat": "quote", "id": "amp", "name": "振幅", "field": "f7", "unit": "%" },
+    { "cat": "quote", "id": "vol", "name": "成交量", "field": "f5", "unit": "手", "scale": 0.01 }
+  ]
+}
