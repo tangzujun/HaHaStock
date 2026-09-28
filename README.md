@@ -55,5 +55,14 @@ python3 -m http.server 3005
 # 打开 http://localhost:3005/index.html
 ```
 
+## 部署（腾讯云轻量服务器）
+纯静态站，无需后端。购买配置与部署步骤见 `deploy/README-部署.md`
+（轻量应用服务器 2核2G + nginx，上海机房一年 ≤100 元，走公网 IP 访问免备案）。
+
+```bash
+./deploy/localize-cdn.sh   # 首次：ECharts/SheetJS 落到 vendor/（国内访问 jsdelivr 不稳）
+./deploy/deploy.sh         # 日常：增量推送到服务器
+```
+
 ## 免责声明
 行情可能存在延迟，所有分析与建议仅供参考，不构成投资建议。市场有风险，投资需谨慎。
